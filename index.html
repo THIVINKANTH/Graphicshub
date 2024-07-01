@@ -44,7 +44,7 @@
 					</div>
 				</div>
 				<div class="main-article__content mt-5">
-					<h2 class="main-article__header ">WHO WE ARE?</h2>
+					<h2 class="main-article__header "><span class="who"></span></h2>
 					<p class="main-article__paragraph">We are a team of professional photo editors from Tamil Nadu, specializing in real estate photo editing services. Our services are fast, affordable, and designed to make your real estate photos stand out. Let us help you enhance the appeal of your property listings with our expert editing solutions.</p>
 					<div class="main-article__paragraph">
 						<div class="row justify-content-center mt-lg-5" data-aos="fade-down"
@@ -93,6 +93,15 @@
 	<script>
 		var typingEffect = new Typed(".multiText",{
 			strings : ["Welcome to World of"],
+			loop : true,
+			typeSpeed : 100,
+			backSpeed : 80,
+			backDelay : 1500
+		})
+	</script>
+	<script>
+		var typingEffect = new Typed(".who",{
+			strings : ["Who we are?"],
 			loop : true,
 			typeSpeed : 100,
 			backSpeed : 80,
