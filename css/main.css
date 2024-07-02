@@ -148,15 +148,20 @@ p{
   color: #1CEFBC;
 }
 #nav {
-	background-image: url(../img/layer-base.png);
+	/* background-image: url(../img/layer-base.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position:center;
+	background-position:center; */
+	background-image: url(../img/layer-base.png);
+  background-attachment: fixed;
+  background-position: center top;
 }
 .navbar
 {
 	z-index: 1;
-	/* transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
-	transition: var(--transition);
-	will-change: transform; */
+	background-image:
+  linear-gradient(rgba(0,0,0,0.2)), 
+  url(../img/layer-base.png);
+  background-attachment: fixed;
+  background-position: auto,center top;
 }
