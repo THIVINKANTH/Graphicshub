@@ -147,12 +147,12 @@ p{
 .nav-link:hover{
   color: #1CEFBC;
 }
-#nav {
+/* #nav {
 	background-image: url(../img/layer-base.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center;
-}
+} */
 .navbar
 {
 	z-index: 1;
