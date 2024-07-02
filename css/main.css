@@ -148,21 +148,16 @@ p{
   color: #1CEFBC;
 }
 #nav {
-	/* background-image: url(../img/layer-base.png);
+	background-image: url(../img/layer-base.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position:center; */
-	background-image: url(../img/layer-base.png);
-  background-attachment: fixed;
-  background-position: center top;
+	background-position:center;
 }
 .navbar
 {
 	z-index: 1;
-	transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
-	background-image:
-  linear-gradient(rgba(0,0,0,0.2)), 
-  url(../img/layer-base.png);
-  background-attachment: fixed;
-  background-position: auto,center top;
+	background-color: rgba(0, 0, 0, 0.2);
+	/* transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+	transition: var(--transition);
+	will-change: transform; */
 }
