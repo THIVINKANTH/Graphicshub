@@ -147,7 +147,7 @@ p{
 .nav-link:hover{
   color: #1CEFBC;
 }
-.wrapper {
+#nav {
 	background-image: url(../img/layer-base.png);
 	background-size: cover;
 	background-repeat: no-repeat;
