@@ -156,7 +156,7 @@ p{
 .navbar
 {
 	z-index: 1;
-	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+	/* transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	transition: var(--transition);
-	will-change: transform;
+	will-change: transform; */
 }
