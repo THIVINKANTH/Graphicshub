@@ -132,3 +132,31 @@ body {
 p{
 	    margin-bottom: 0;
 }
+
+
+/* nav */
+.nav-link
+{
+    color: #FFF;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.nav-link:hover{
+  color: #1CEFBC;
+}
+.wrapper {
+	background-image: url(../img/layer-base.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.navbar
+{
+	z-index: 1;
+	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+	transition: var(--transition);
+	will-change: transform;
+}
