@@ -111,6 +111,7 @@ body {
 	transition: var(--transition);
 	will-change: transform;
 }
+
 .main-article__paragraph {
 	max-width: calc(var(--index) * 30);
 	font-size: calc(var(--index) * .9);
@@ -132,7 +133,17 @@ body {
 p{
 	    margin-bottom: 0;
 }
-
+/* about */
+.main-article_aboutparagraph
+{
+	font-size: calc(var(--index) * .9);
+	margin-top: calc(var(--index) / 1.25);
+}
+.main-article__aboutheader
+{
+	font-size: calc(var(--index) * 1.8);
+	letter-spacing: calc(var(--index) / 7.5);
+}
 
 /* nav */
 .nav-link
