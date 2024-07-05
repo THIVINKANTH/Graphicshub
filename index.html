@@ -111,20 +111,87 @@
 			
 			<article class="main-article bg-light" style="background-image: url(img/dungeon.jpg);background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;">
+	background-position: center;" id="about">
 				<div class="main-article__content">
 					<div class="row justify-content-center ">
 						<div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 col-sm-12 imgbox">
 							<img src="img/house.png" alt="house" class="w-100 me-5 pe-5 mt-5">
 						</div>
 						<div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 col-sm-12">
-							<h2 class="main-article__aboutheader">ABOUT Us!</span></h2>
+							<h2 class="main-article__aboutheader"><span class="about"></span></h2>
 							<p class="main-article_aboutparagraph">Are you looking for a reliable outsourcing photo editing team to help grow your real estate photo editing services business 24/7? Look no further than Graphics Hub – your perfect partner in business growth.</p>
 							<p class="main-article_aboutparagraph">While there are many real estate photo editing companies out there, Graphics Hub stands out as the best destination for real estate photo enhancement. We pride ourselves on unbeatable turnaround times and affordable pricing, benefiting both your clients and your bottom line.</p>
 							<p class="main-article_aboutparagraph">Our photo editing services cater to clients all over the world, including the USA, Australia, the UK, Norway, and Canada. We strive to ensure each customer is happy and content by offering a 100% satisfaction guarantee, with unlimited changes and revisions until you are fully satisfied.</p>
 							<p class="main-article_aboutparagraph">We don't take the photos, but we can certainly make them look exceptional. Whether it’s retouching, removing unwanted elements, or simply enhancing the overall appearance, our goal is to make you look good. We promise to elevate your real estate photos to a new level, ensuring your photo editing experience is always top-notch.</p>
 						</div>
 					</div>
+				</div>
+			</article>
+
+			<article class="main-article bg-light" style="background-image: url(img/dungeon.jpg);background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;" id="about">
+				<div class="main-article__content">
+					<!-- team-section -->
+					<section id="team-section">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12">
+									<div class="single-team">
+										<div class="social-team">
+											<ul>
+												<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+												<li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+												<li><a href="#"><i class="bi bi-dropbox"></i></a></li>
+											</ul>
+										</div>
+										<img src="https://static.pexels.com/photos/532220/pexels-photo-532220.jpeg" alt="Team Member">
+										<div class="overlay"></div>
+										<div class="intro-team">
+											<h4>Aravind</h4>
+											<span>Grapichs Designer</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12">
+									<div class="single-team">
+										<div class="social-team">
+											<ul>
+												<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+												<li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+												<li><a href="#"><i class="bi bi-dropbox"></i></a></li>
+												<li><a href="#"><i class="bi bi-github"></i></a></li>
+											</ul>
+										</div>
+										<img src="https://static.pexels.com/photos/532220/pexels-photo-532220.jpeg" alt="thivin">
+										<div class="overlay"></div>
+										<div class="intro-team">
+											<h4>Thivinkanth</h4>
+											<span>Java & php Fullstack Developer and Grapichs Designer</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12">
+									<div class="single-team">
+										<div class="social-team">
+											<ul>
+												<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+												<li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+												<li><a href="#"><i class="bi bi-dropbox"></i></a></li>
+											</ul>
+										</div>
+										<img src="https://static.pexels.com/photos/415326/pexels-photo-415326.jpeg" alt="Team Member">
+										<div class="overlay"></div>
+										<div class="intro-team">
+											<h4>Manikandan</h4>
+											<span>Grapichs Designer</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+	<!-- /team-section -->
 				</div>
 			</article>
 			
@@ -148,6 +215,13 @@
 		});
 		var typingEffect = new Typed(".who",{
 			strings : ["Who we are?"],
+			loop : true,
+			typeSpeed : 100,
+			backSpeed : 80,
+			backDelay : 1500
+		});
+		var typingEffect = new Typed(".about",{
+			strings : ["ABOUT Us!"],
 			loop : true,
 			typeSpeed : 100,
 			backSpeed : 80,
