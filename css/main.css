@@ -166,11 +166,15 @@ p{
 
 .imgbox{
 	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
   }
   .imgbox img{
 	position: relative;
 		left: 40px;
 	animation: animateUser 4s linear infinite;
+	overflow-x: hidden;
+	overflow-y: hidden;
   }
   @keyframes animateUser{
 	50%{
@@ -207,18 +211,29 @@ a, a:link, a:hover, a:focus, a:active {
 	text-decoration: none;
 }
 
-img {
-	max-width: 100%;
-	height: 480px
-}
 
 /* =====================
     TEAM STYLES
 ======================= */
+
+
+#teamimg {
+	max-width: 100%;
+	height: 480px
+}
+.main-article__teamheader
+{
+	text-align: start;
+	font-weight: bolder;
+}
+#teamline
+{
+	border-bottom: 4px solid #00bfe7;
+	width: 100px;
+}
 #team-section {
     overflow: hidden;
-    padding: 120px 0;
-    /* background: #f5f5f5; */
+    padding: 10px 0;
 }
 
 #team-section .col-md-4 {
@@ -251,7 +266,6 @@ img {
 .social-team {
     position: absolute;
     top: -50px;
-    /*right: -59px;*/
     right: -9999px;
     padding: 5px 15px;
     transition: all .4s ease;
@@ -282,7 +296,6 @@ img {
     display: block;
     position: absolute;
     bottom: -55px;
-    /*left: -36px;*/
     left: -9999px;
     transition: all .4s ease;
 	width: 300px;
@@ -305,10 +318,6 @@ img {
     text-transform: uppercase;
     margin-left: 10px;
 }
-
-/* .single-team img {
-  max-width:
-} */
 
 .single-team:before {
     position: absolute;
@@ -343,3 +352,97 @@ img {
 .single-team:hover:after {
     transform: translate(-60px, 60px);
 }
+
+.button {
+	cursor: pointer;
+	position: relative;
+	padding: 15px 20px;
+	text-decoration: none;
+	border: none;
+	color: #fff;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	letter-spacing: 4px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .button:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+
+  }
+  .button::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+	  90deg,
+	  transparent,
+	  rgba(255, 255, 255, 0.4),
+	  transparent
+	);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+  }
+  .button:hover:after {
+	left: 100%;
+  }
+  .button span {
+	position: absolute;
+	display: block;
+	transition: 0.5s ease;
+  }
+  .button span:nth-child(1) {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+  }
+  .button:hover span:nth-child(1) {
+	width: 100%;
+	transform: translateX(100%);
+  }
+  .button span:nth-child(2) {
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+  }
+  .button:hover span:nth-child(2) {
+	height: 100%;
+	transform: translateY(100%);
+  }
+  .button span:nth-child(3) {
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+  }
+  .button:hover span:nth-child(3) {
+	width: 100%;
+	transform: translateX(-100%);
+  }
+  .button span:nth-child(4) {
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+  }
+  .button:hover span:nth-child(4) {
+	height: 100%;
+	transform: translateY(-100%);
+  }
+  

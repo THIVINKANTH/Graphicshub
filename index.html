@@ -9,46 +9,63 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+
+	<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 	
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="Cloud-effect-parallax.css">
 	<script src="js/app.js" defer></script>
 	<link rel="stylesheet" href="css/main.css">
+	   <!-- Css Styles -->
+	   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+	   <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+	   <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+	   <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+	   <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+	   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-expand-sm" style="background-color:transparent;">
-			<div class="container-fluid ">
-				<a class="navbar-brand" href="#"></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-					<span class="text-light"><i class="bi bi-list"></i></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-					<ul class="navbar-nav mx-5 " >
-					<li class="nav-item ms-xl-4 ms-lg-5 ms-md-2 ms-5 me-xl-5 me-lg-0 me-md-0 me-0">
-						<a class="nav-link" href="#home">Home</a>
-					</li>
-					<li class="nav-item ms-xl-4 ms-lg-5 ms-md-2 ms-5 me-xl-5 me-lg-0 me-md-0 me-0">
-						<a class="nav-link" href="#about">About Us</a>
-					</li>
-					<li class="nav-item ms-xl-4 ms-lg-5 ms-md-2 ms-5 me-xl-5 me-lg-0 me-md-0 me-0">
-						<a class="nav-link" href="#skills">Works</a>
-					</li>
-					<li class="nav-item ms-xl-4 ms-lg-5 ms-md-2 ms-5 me-xl-5 me-lg-0 me-md-0 me-0">
-						<a class="nav-link" href="#works">Our Team</a>
-					</li>
-					<li class="nav-item ms-xl-4 ms-lg-5 ms-md-2 ms-5 me-xl-5 me-lg-0 me-md-0 me-0">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<div class="wrapper">
+	<!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <!-- <a href="./index.html"><img src="img/logo.png" alt=""></a> -->
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#services">Services</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#team-section">Our Team</a></li>
+                                <li><a href="#Contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+	<div class="wrapper" style="overflow-y: hidden;">
 		<div class="content">
 			<header class="main-header" id="home">
 				<div class="layers">
@@ -62,18 +79,9 @@
 				</div>
 			</header>
 		
-			<article class="main-article" style="background-image: url(img/dungeon.jpg);" id="Cloud-effect-parallax">
-				<!-- <div id="banner"> 
-					<div class="clouds">
-						<img src="cloud/cloud1.png" style="--i:1;">
-						<img src="cloud/cloud2.png" style="--i:2;">
-						<img src="cloud/cloud3.png" style="--i:3;">
-						<img src="cloud/cloud4.png" style="--i:4;">
-						<img src="cloud/cloud5.png" style="--i:5;">
-					</div>
-				</div> -->
-				<div class="main-article__content mt-5">
-					<h2 class="main-article__header "><span class="who"></span></h2>
+			<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+				<div class="main-article__content">
+					<h2 class="main-article__header " style="color: #ffffff;"><span class="who"></span></h2>
 					<p class="main-article__paragraph">We are a team of professional photo editors from Tamil Nadu, specializing in real estate photo editing services. Our services are fast, affordable, and designed to make your real estate photos stand out. Let us help you enhance the appeal of your property listings with our expert editing solutions.</p>
 					<div class="main-article__paragraph">
 						<div class="row justify-content-center mt-lg-5" data-aos="fade-down"
@@ -109,94 +117,320 @@
 				</div>
 			</article>
 			
-			<article class="main-article bg-light" style="background-image: url(img/dungeon.jpg);background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;" id="about">
+			<article class="main-article" style="background: #100028;" >
 				<div class="main-article__content">
-					<div class="row justify-content-center ">
-						<div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 col-sm-12 imgbox">
-							<img src="img/house.png" alt="house" class="w-100 me-5 pe-5 mt-5">
+					<section class="services" id="about">
+						<div class="video-background ">
+							<video autoplay muted loop id="bg-video">
+								<source src="img/video.mp4" type="video/mp4" style="overflow: hidden;">
+							</video>
+							<div class="contentv">
+								<h2 class="main-article__aboutheader" style="color: #ffffff;">ABOUT Us!|</h2>
+								<p style="font-size: 15px;line-height: 20px;">Elevate your real estate listings with Graphics Hub, your global partner for exceptional photo editing. We deliver stunning results with unmatched turnaround times and a 100% satisfaction guarantee, ensuring your properties stand out in any market</p>
+							</div>
 						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 col-sm-12">
-							<h2 class="main-article__aboutheader"><span class="about"></span></h2>
-							<p class="main-article_aboutparagraph">Are you looking for a reliable outsourcing photo editing team to help grow your real estate photo editing services business 24/7? Look no further than Graphics Hub – your perfect partner in business growth.</p>
-							<p class="main-article_aboutparagraph">While there are many real estate photo editing companies out there, Graphics Hub stands out as the best destination for real estate photo enhancement. We pride ourselves on unbeatable turnaround times and affordable pricing, benefiting both your clients and your bottom line.</p>
-							<p class="main-article_aboutparagraph">Our photo editing services cater to clients all over the world, including the USA, Australia, the UK, Norway, and Canada. We strive to ensure each customer is happy and content by offering a 100% satisfaction guarantee, with unlimited changes and revisions until you are fully satisfied.</p>
-							<p class="main-article_aboutparagraph">We don't take the photos, but we can certainly make them look exceptional. Whether it’s retouching, removing unwanted elements, or simply enhancing the overall appearance, our goal is to make you look good. We promise to elevate your real estate photos to a new level, ensuring your photo editing experience is always top-notch.</p>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="main-article bg-light" style="background-image: url(img/dungeon.jpg);background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;" id="about">
-				<div class="main-article__content">
-					<!-- team-section -->
-					<section id="team-section">
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12">
-									<div class="single-team">
-										<div class="social-team">
-											<ul>
-												<li><a href="#"><i class="bi bi-facebook"></i></a></li>
-												<li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
-												<li><a href="#"><i class="bi bi-dropbox"></i></a></li>
-											</ul>
-										</div>
-										<img src="img/aravind.jpg" alt="Aravind">
-										<div class="overlay"></div>
-										<div class="intro-team">
-											<h4>Aravind</h4>
-											<span>Grapichs Designer</span>
+						
+						<!-- <div class="row justify-content-center">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 col-sm-12 imgbox">
+								
+								<img src="img/house.png" alt="house" class="w-100 me-5 pe-5 mt-lg-5 mt-0">
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 col-sm-12">
+								<h2 class="main-article__aboutheader" style="color: #ffffff;"><span class="about"></span></h2>
+								<p class="main-article_aboutparagraph">Welcome to Graphics Hub - Your Trusted Partner in Real Estate Photo Editing</p>
+								<p class="main-article_aboutparagraph">Are you seeking a reliable photo editing team to enhance your real estate photos around the clock? Look no further than Graphics Hub – your ideal partner for business growth.</p>
+								<p class="main-article_aboutparagraph">At Graphics Hub, we excel in delivering outstanding real estate photo enhancement services. What sets us apart is our commitment to unbeatable turnaround times and affordable pricing, designed to benefit both your clients and your bottom line.</p>
+								<p class="main-article_aboutparagraph">Why Choose Graphics Hub?</p>
+								<p class="main-article_aboutparagraph">Global Reach: Our services cater to clients worldwide, including the USA, Australia, the UK, Norway, and Canada.</p>
+								<p class="main-article_aboutparagraph">100% Satisfaction Guarantee: We ensure every customer is delighted with our work, offering unlimited changes and revisions until you are completely satisfied.</p>
+								<p class="main-article_aboutparagraph">Expert Enhancements: Although we don't take the photos, we specialize in making them look exceptional. From retouching to removing unwanted elements and enhancing overall appearance, our goal is to make your real estate photos stand out.</p>
+								<p class="main-article_aboutparagraph">Our Promise</p>
+								<p class="main-article_aboutparagraph">We promise to elevate your real estate photos to new heights, providing a top-notch photo editing experience every time. Trust Graphics Hub to make your properties look their best, helping you succeed in the competitive real estate market.</p>
+							</div>
+						</div> -->
+					</section>
+						<!-- Services Section Begin -->
+						<section class="services spad" id="services">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="services__title">
+											<div class="section-title">
+												<span>Our services</span>
+												<h2>What We do?</h2>
+											</div>
+											<p>Transform your visuals with our expert photo editing services! At Graphics Hub, we don’t just enhance your images—we elevate them. Our skilled editors blend creativity with precision to make every detail pop and every moment unforgettable. Whether it's for professional portfolios or personal memories, trust us to deliver stunning results that speak volumes.</p>
+											<a href="#" class="primary-btn">View all services</a>
 										</div>
 									</div>
-								</div>
-								<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12">
-									<div class="single-team">
-										<div class="social-team">
-											<ul>
-												<li><a href="#"><i class="bi bi-facebook"></i></a></li>
-												<li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
-												<li><a href="#"><i class="bi bi-dropbox"></i></a></li>
-												<li><a href="#"><i class="bi bi-github"></i></a></li>
-											</ul>
-										</div>
-										<img src="img/thivintk.png" alt="Thivin">
-										<div class="overlay"></div>
-										<div class="intro-team">
-											<h4>Thivinkanth</h4>
-											<span>Java & php Fullstack Developer and Grapichs Designer</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12">
-									<div class="single-team">
-										<div class="social-team">
-											<ul>
-												<li><a href="#"><i class="bi bi-facebook"></i></a></li>
-												<li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
-												<li><a href="#"><i class="bi bi-dropbox"></i></a></li>
-											</ul>
-										</div>
-										<img src="img/IMG_0792.JPG" alt="Team Member">
-										<div class="overlay"></div>
-										<div class="intro-team">
-											<h4>Manikandan</h4>
-											<span>Grapichs Designer</span>
+									<div class="col-lg-8">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6">
+												<div class="services__item">
+													<div class="services__item__icon">
+														<img src="img/icons/hdr-removebg-preview.png" alt="">
+													</div>
+													<h4>HDR Blending</h4>
+													<p>HDR Blending combines multiple exposures to create a single image with exceptional detail and dynamic range, showcasing both highlights and shadows vividly.</p>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6">
+												<div class="services__item">
+													<div class="services__item__icon">
+														<img src="img/icons/flash.png" alt="">
+													</div>
+													<h4>Flash Ambient Blending</h4>
+													<p>Flash Ambient Blending merges flash and ambient light to produce well-balanced photos with natural illumination and enhanced detail.</p>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6">
+												<div class="services__item">
+													<div class="services__item__icon">
+														<img src="img/icons/twilight.jpg" alt="">
+													</div>
+													<h4>Twilight Conversion</h4>
+													<p>Twilight Conversion transforms daytime images into enchanting twilight scenes, adding a magical and serene ambiance.</p>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6">
+												<div class="services__item">
+													<div class="services__item__icon">
+														<img src="img/icons/object.png" alt="">
+													</div>
+													<h4>Object Removal</h4>
+													<p>Object Removal seamlessly eliminates unwanted elements from your photos, leaving behind a clean and polished image.</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
-	<!-- /team-section -->
+						</section>
+						<!-- Services Section End -->
+						 <!-- Portfolio Section Begin -->
+						<section class="portfolio spad" id="portfolio">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12">
+										<ul class="portfolio__filter">
+											<li class="active" data-filter="*">All</li>
+											<li data-filter=".branding">Branding</li>
+											<li data-filter=".digital-marketing">Digital marketing</li>
+											<li data-filter=".web">Web</li>
+											<li data-filter=".photography">Photography</li>
+											<li data-filter=" .ecommerce">eCommerce</li>
+										</ul>
+									</div>
+								</div>
+								<div class="row portfolio__gallery">
+									<div class="col-lg-4 col-md-6 col-sm-6 mix branding">
+										<div class="portfolio__item">
+											<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/DSC_7698.jpg" style="background-image: url(img/portfolio/DSC_7698.jpg);">
+											</div>
+											<div class="portfolio__item__text">
+												<h4>VIP Auto Tires & Service</h4>
+												<ul>
+													<li>eCommerce</li>
+													<li>Magento</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+										<div class="portfolio__item">
+											<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/DSC_7734.jpg" style="background-image: url(img/portfolio/DSC_7734.jpg);">
+											</div>
+											<div class="portfolio__item__text">
+												<h4>VIP Auto Tires & Service</h4>
+												<span>Photography</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 mix web">
+										<div class="portfolio__item">
+											<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/EOS_7099.jpg" style="background-image: url(img/portfolio/EOS_7099.jpg);">
+											</div>
+											<div class="portfolio__item__text">
+												<h4>VIP Auto Tires & Service</h4>
+												<ul>
+													<li>eCommerce</li>
+													<li>Magento</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 mix photography">
+										<div class="portfolio__item">
+											<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/DSC_7675.jpg" style="background-image: url(img/portfolio/DSC_7675.jpg);">
+											</div>
+											<div class="portfolio__item__text">
+												<h4>VIP Auto Tires & Service</h4>
+												<ul>
+													<li>eCommerce</li>
+													<li>Magento</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 mix ecommerce">
+										<div class="portfolio__item">
+											<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/DSC_7684.jpg" style="background-image: url(img/portfolio/DSC_7684.jpg);">
+											</div>
+											<div class="portfolio__item__text">
+												<h4>VIP Auto Tires & Service</h4>
+												<span>Photography</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 mix branding">
+										<div class="portfolio__item">
+											<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/DSC_7662.jpg" style="background-image: url(img/portfolio/DSC_7662.jpg);">
+											</div>
+											<div class="portfolio__item__text">
+												<h4>VIP Auto Tires & Service</h4>
+												<ul>
+													<li>eCommerce</li>
+													<li>Magento</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 mix web">
+										<div class="portfolio__item">
+											<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/DJI_0001.jpg" style="background-image: url(img/portfolio/DJI_0001.jpg);">
+											</div>
+											<div class="portfolio__item__text">
+												<h4>VIP Auto Tires & Service</h4>
+												<ul>
+													<li>eCommerce</li>
+													<li>Magento</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 mix photography">
+										<div class="portfolio__item">
+											<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-8.jpg">
+												<a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+														class="fa fa-play"></i></a>
+											</div>
+											<div class="portfolio__item__text">
+												<h4>VIP Auto Tires & Service</h4>
+												<span>Photography</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6 mix ecommerce">
+										<div class="portfolio__item">
+											<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-9.jpg">
+												<a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+														class="fa fa-play"></i></a>
+											</div>
+											<div class="portfolio__item__text">
+												<h4>VIP Auto Tires & Service</h4>
+												<ul>
+													<li>eCommerce</li>
+													<li>Magento</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="pagination__option">
+											<a href="#" class="arrow__pagination left__arrow"><span class="arrow_left"></span> Prev</a>
+											<a href="#" class="number__pagination">1</a>
+											<a href="#" class="number__pagination">2</a>
+											<a href="#" class="arrow__pagination right__arrow">Next <span class="arrow_right"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- Portfolio Section End -->
+						<!-- team-section -->
+						<section id="team-section" style="background-image:url(img/team-bg.jpg) ; background-position: center; background-repeat: no-repeat; background-size: cover;" >
+							<div class="container services spad">
+								<p style="text-align: start;">NICE TO MEET </p>
+								<h2 class="main-article__teamheader mt-1" style="color: #ffffff;">OUR TEAM</h2>
+								<div id="teamline" class="mt-2"></div>
+								<div class="row justify-content-center">
+									<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12">
+										<div class="single-team">
+											<div class="social-team">
+												<ul>
+													<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+													<li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+													<li><a href="#"><i class="bi bi-dropbox"></i></a></li>
+												</ul>
+											</div>
+											<img src="img/aravind.jpg" alt="Aravind" id="teamimg">
+											<div class="overlay"></div>
+											<div class="intro-team">
+												<h4>Aravind</h4>
+												<span>Grapichs Designer</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12">
+										<div class="single-team">
+											<div class="social-team">
+												<ul>
+													<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+													<li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+													<li><a href="#"><i class="bi bi-dropbox"></i></a></li>
+													<li><a href="#"><i class="bi bi-github"></i></a></li>
+												</ul>
+											</div>
+											<img src="img/thivintk.png" alt="Thivin" id="teamimg">
+											<div class="overlay"></div>
+											<div class="intro-team">
+												<h4>Thivinkanth</h4>
+												<span>Java & php Fullstack Developer and Grapichs Designer</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12">
+										<div class="single-team">
+											<div class="social-team">
+												<ul>
+													<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+													<li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+													<li><a href="#"><i class="bi bi-dropbox"></i></a></li>
+												</ul>
+											</div>
+											<img src="img/IMG_0792.JPG" alt="Team Member" id="teamimg">
+											<div class="overlay"></div>
+											<div class="intro-team">
+												<h4>Manikandan</h4>
+												<span>Grapichs Designer</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="text-end">
+									<button class="button">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										Meet Our Team
+									</button>
+								</div> -->
+								<div class="col-lg-12 p-0 mt-5">
+									<div class="team__btn">
+										<a href="#" class="primary-btn">Meet Our Team</a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- /team-section -->
 				</div>
 			</article>
-			
 		</div>
 	</div>
+	
 	
 
 
@@ -228,5 +462,14 @@
 			backDelay : 1500
 		});
 	</script>
+	    <!-- Js Plugins -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/mixitup.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/jquery.slicknav.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
 </body>
 </html>
