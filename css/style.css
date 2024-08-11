@@ -299,7 +299,6 @@ ol {
   top: 0;
   width: 100%;
   background: transparent;
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
   z-index: 9;
 }
 
@@ -2207,4 +2206,10 @@ ol {
   color: #f1f1f1;
   width: 100%;
   overflow: hidden;
+}
+
+#company
+{
+    font-family: "Play", sans-serif;
+    color: #ffffff;
 }
