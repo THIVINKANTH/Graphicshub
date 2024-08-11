@@ -299,6 +299,7 @@ ol {
   top: 0;
   width: 100%;
   background: transparent;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
   z-index: 9;
 }
 
@@ -1943,7 +1944,7 @@ ol {
     position: absolute;
     right: 10px;
     top: 26px;
-    /* background: transparent; */
+    background: transparent;
   }
 
   .header .container {
@@ -2069,7 +2070,7 @@ ol {
     position: absolute;
     right: 10px;
     top: 26px;
-    background: #00bfe7;
+    background: transparent;
   }
 
   .header .container {
@@ -2210,6 +2211,7 @@ ol {
 
 #company
 {
+  font-size: 15px;
     font-family: "Play", sans-serif;
     color: #ffffff;
 }
