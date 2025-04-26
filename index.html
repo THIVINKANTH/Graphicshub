@@ -636,16 +636,13 @@
 										<div class="contact__form" data-aos="fade-up"
 										data-aos-duration="1500">
 											<h3>Get in touch</h3>
-											<form
-											action="mailto:graphicshub225@gmail.com"
-											method="post"
-											enctype="text/plain">
-												<input type="text" placeholder="Name" required>
-												<input type="email" placeholder="Email" required>
-												<input type="url" placeholder="Website" required>
-												<textarea placeholder="Message" required></textarea>
+											<form id="contactForm">
+												<input type="text" id="name" placeholder="Name" required>
+												<input type="email" id="email" placeholder="Email" required>
+												<input type="url" id="website" placeholder="Website" required>
+												<textarea id="message" placeholder="Message" required></textarea>
 												<button type="submit" class="site-btn">Send Message</button>
-											</form>
+											  </form>
 										</div>
 									</div>
 								</div>
@@ -796,6 +793,24 @@
 		});
 		});
 	</script>
+		<script>
+		$('#contactForm').on('submit', function(e) {
+		  e.preventDefault();
+		  const name = $('#name').val();
+		  const email = $('#email').val();
+		  const website = $('#website').val();
+		  const message = $('#message').val();
+		  const subject = encodeURIComponent("New message from " + name);
+		  const body = encodeURIComponent(
+			"Name: " + name + "\n" +
+			"Email: " + email + "\n" +
+			"Website: " + website + "\n\n" +
+			"Message:\n" + message
+		  );
+		  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=graphicshub225@gmail.com&su=${subject}&body=${body}`;
+		  window.open(gmailUrl, '_blank');
+		});
+	  </script>
 	<script>
 		$(document).ready(function(){
 		$("#Object").click(function(){
